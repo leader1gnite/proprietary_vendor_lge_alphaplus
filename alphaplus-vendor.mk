@@ -641,7 +641,6 @@ PRODUCT_PACKAGES += \
     libeepromcutter \
     libfilm_emulation \
     libfilm_emulation_symphony \
-    libfpsph \
     libgf_algo \
     libgf_hal \
     libimagerwrapper \

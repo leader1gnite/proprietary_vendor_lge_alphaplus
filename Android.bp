@@ -4817,35 +4817,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfpsph",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfpsph.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "vendor.lge.hardware.powerhint.rescontrol@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgf_algo",
     owner: "lge",
     strip: {
@@ -4887,7 +4858,7 @@ cc_prebuilt_library_shared {
                 "libgf_algo",
                 "libQSEEComAPI",
                 "libion",
-                "libfpsph",
+                "libets_teeclient_v2_shim",
                 "liblog",
                 "libc++",
                 "libc",
